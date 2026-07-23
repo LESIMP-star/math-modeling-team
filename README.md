@@ -162,21 +162,54 @@ cd 仓库名
 
 ---
 
----
-
 ## 📎 推荐资源
 
-| 资源 | 说明 |
+### 一、论文排版（LaTeX 模板）
+
+| 项目 | 适用场景 | 亮点 |
+|------|---------|------|
+| [CUMCM-Latex-template](https://github.com/EmpyreanHYR/CUMCM-Latex-template) | ⭐ **国赛** | 自动目录/图表目录，一键 `build.bat` |
+| [cls_for_CUMCM](https://github.com/XingA02/cls_for_CUMCM) | 国赛 | 按 2023 官方格式，有 B 站教程 |
+| [MCM-Latex-template](https://github.com/EmpyreanHYR/MCM-Latex-template) | **美赛** | 模块化章节，`\cref` 智能引用 |
+| [easymcm](https://github.com/xjtu-blacksmith/easymcm) | 美赛 | 极简，只有 2 个核心文件 |
+| [GMCM_LaTeX_overleaf](https://github.com/Lokioja/GMCM_LaTeX_overleaf) | 研赛 | Overleaf 直接上传即用 |
+| [nemcmthesis](https://github.com/JohnsonLo00/nemcmthesis) | 东三省联赛 | 目录结构清晰，含使用指北 |
+| [GMCMthesis](https://github.com/wsr1998/2022-China_post-graduate_mathematical_contest_in_modeling_thesis_template_Latex) | 研赛 | 彩色/黑白双版本 |
+
+### 二、综合资源库
+
+| 项目 | 内容 |
 |------|------|
-| [最优化课程 - 彭振华](https://zhenhuapeng.github.io/coursematerials/) | 导师的最优化课程，和 Gurobi 学习同步进行 |
-| [ddro-via-bilevel](https://github.com/simstevens/ddro-via-bilevel) | ⭐ KKT/强对偶单层转化—最短路径/背包/投资组合案例 |
-| [gurobi-modeling-examples](https://github.com/lx249/gurobi-modeling-examples) | Gurobi 官方建模示例合辑（Notebook） |
-| [gurobi-modeling-examples (中文)](https://github.com/zhuqiu8/Guroi_modeling-examples) | 同上，带中文注释 |
-| [pyaugmecon](https://github.com/wouterbles/pyaugmecon) | 增强 ε-约束法，Python + Gurobi，自动帕累托前沿 |
-| [Multi-Objective-Optimization-Using-Gurobi](https://github.com/Dr-BAli/Multi-Objective-Optimization-Using-Gurobi) | 权重法 + 帕累托前沿 + Gurobi `setObjectiveN` |
-| [benchmark_bilevel](https://github.com/benchopt/benchmark_bilevel) | 双层优化基准测试框架 |
-| [Solver-for-MIQP-QP-Bilevel-Problems](https://github.com/AndreasHorlaender/Solver-for-MIQP-QP-Bilevel-Problems) | 高松弛（HPR）vs KKT，切割平面 |
-| [VF-iDCA](https://github.com/SUSTech-Optimization) | iDCA 迭代分解（超参数选择）|
+| [MathModels](https://github.com/rekcul-zero/MathModels) | 优秀论文（国/研/美赛）、算法思维导图、Matlab 教程、PPT |
+| [mathematical-modeling](https://github.com/18720060819/mathematical-modeling) | 按模型分类的优秀论文 + 算法代码 + 全流程教程 |
+
+### 三、画图 / 可视化
+
+| 项目 | 覆盖库 | 适合场景 |
+|------|--------|---------|
+| [Exploring-Python-Visualization-Libraries](https://github.com/Nithinkumaryadagiri/Exploring-Python-Visualization-Libraries) | Matplotlib/Seaborn/Plotly/Bokeh | **四大库横向对比**，帮你选型 |
+| [Advanced-Data-Visualization](https://github.com/jihli/Advanced-Data-Visualization-in-Matplotlib-Seaborn-Plotly) | Matplotlib/Seaborn/Plotly | Sankey 图、3D 表面、交互仪表盘 |
+| [Data-Visualization-in-Python](https://github.com/kanchanchy/Data-Visualization-in-Python) | Matplotlib/Seaborn/Plotly | 从基础折线图到交互热力图 |
+| [Numpy-Pandas-Guide](https://github.com/MadsDoodle/Numpy-Pandas-Guide) | Matplotlib/Seaborn/Plotly | 数据处理+可视化一体化 |
+| [data-visualization-with-python](https://github.com/b-mahadevan/data-visualization-with-python) | Matplotlib/Plotly | 实战项目：随机游走、GeoJSON 地图 |
+
+### 四、写作流程 / 团队协作
+
+| 项目 | 内容 |
+|------|------|
+| [MathModelHub](https://github.com/Jaxon1216/MathModelHub) | 建模手/编程手/写作手角色分工、Git 协作规范 |
+
+### 五、Gurobi / 优化方向
+
+| 项目 | 说明 |
+|------|------|
+| [最优化课程 - 彭振华](https://zhenhuapeng.github.io/coursematerials/) | 导师的最优化课程，同步学习 |
+| [ddro-via-bilevel](https://github.com/simstevens/ddro-via-bilevel) | ⭐ KKT/强对偶单层转化 |
+| [gurobi-modeling-examples](https://github.com/lx249/gurobi-modeling-examples) | Gurobi 官方示例合辑 |
+| [pyaugmecon](https://github.com/wouterbles/pyaugmecon) | 增强 ε-约束法 |
+| [Multi-Objective-Optimization-Using-Gurobi](https://github.com/Dr-BAli/Multi-Objective-Optimization-Using-Gurobi) | 权重法 + 帕累托前沿 |
+| [benchmark_bilevel](https://github.com/benchopt/benchmark_bilevel) | 双层优化基准测试 |
+| [Solver-for-MIQP-QP-Bilevel-Problems](https://github.com/AndreasHorlaender/Solver-for-MIQP-QP-Bilevel-Problems) | 高松弛（HPR）vs KKT |
 
 ---
 
