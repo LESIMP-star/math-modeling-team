@@ -1,76 +1,56 @@
-# 🚀 Gurobi 进阶学习工作区
+# 🚀 Gurobi 数学建模工具库
 
-> 目标：2026 年 9 月国赛前掌握 Gurobi 双层/多目标优化  
-> 用户：NCU 金融数学大一，导师彭振华（WHU，双层+DC方向）  
-> 环境：Gurobi 13.0.0 + D:/Anaconda3/python.exe + Spyder  
-> 开始日期：2026-07-24 → 国赛约 2026-09-04（**倒计时 42 天**）
+**给队友的：** 这是咱们队共享的 Gurobi 学习 + 比赛代码库。直接 clone 下来就能跑。
+
+```bash
+git clone https://github.com/你的用户名/仓库名.git
+cd 仓库名
+# 用 D:/Anaconda3/python.exe 跑任意 .py 文件
+```
+
+**关于我：** NCU 金融数学，方向双层优化+DC算法（导师彭振华）。  
+**目标：** 2026 国赛前掌握 Gurobi 求解大规模双层/多目标优化。
 
 ---
 
-## 📁 目录结构
+## 📁 目录
 
 ```
-gurobi-study/
-├── week1-basics/          # 第1周: Gurobi 基础 + 多目标 API
-│   ├── day1-mip1/         # 第一个 MIP (mip1.py)
-│   ├── day2-lp/           # LP + 影子价格 (lp.py, sensitivity.py)
-│   ├── day3-diet/         # 营养配餐 (diet.py 完整建模)
-│   ├── day4-facility/     # 设施选址 (facility.py 0-1规划经典)
-│   ├── day5-multiobj/     # 多目标分层法 (multiobj.py + 简化版)
-│   ├── day6-sos/          # SOS1 互补约束 (sos.py + 练习)
-│   └── day7-review/       # 复习挑战 (week1_review.py)
+├── week1-basics/       ← 从零学 Gurobi（每天一个可跑示例）
+├── week2-bilevel/      ← ⭐ 双层→KKT 单层转化（核心）
+├── week3-multi-bilevel/ ← 多目标×双层
+├── week4-tuning/       ← Gurobi 调参 + 综合项目
+├── week5-competition/  ← 国赛模拟
+├── week6-final-sprint/ ← 最后冲刺
 │
-├── week2-bilevel/         # 第2周: KKT / 强对偶单层转化
-│   ├── day8-math-form/    # 双层标准形式 (数学推导)
-│   ├── day9-kkt-deriva/   # KKT 条件回顾 (纸上推导)
-│   ├── day10-kkt-bigm/    # ⭐ KKT + 大M法 (完整实例)
-│   ├── day11-kkt-sos1/    # KKT + SOS1 (对比大M)
-│   ├── day12-strong-dual/ # 强对偶转化 (理论+代码)
-│   ├── day13-repo-read/   # 读 ddro-via-bilevel 代码
-│   └── day14-review/      # 复习挑战 (week2_review.py)
+├── competition/        ← 【国赛时用】三人协作区
+│   ├── model/          ← Gurobi 求解代码
+│   ├── data/           ← 赛题数据
+│   └── figs/           ← 结果图
 │
-├── week3-multi-bilevel/   # 第3周: 多目标 × 双层
-│   ├── day15-math-form/   # 多目标双层数学形式
-│   ├── day16-epsilon-pri/ # ε-约束法原理
-│   ├── day17-epsilon-cod/ # ⭐ ε-约束法代码实现
-│   ├── day18-pyaugmecon/  # pyaugmecon 库
-│   ├── day19-kkt-multi/   # ⭐ 多目标下层+KKT
-│   ├── day20-full-case/   # 完整案例
-│   └── day21-review/
-│
-├── week4-tuning/          # 第4周: Gurobi 调参 + 综合项目
-│   ├── day22-params/      # ⭐ 参数调优模板
-│   ├── day23-hpr/         # ⭐ High-Point Relaxation
-│   ├── day24-ddroad/      # 读 ddro-via-bilevel 结构
-│   ├── day25-project/     # 综合项目设计 (模板)
-│   ├── day26-project-goal/# 项目完成
-│   ├── day27-paper-map/   # 论文→代码映射
-│   └── day28-review/
-│
-├── week5-competition/     # 第5周: 国赛实战模拟
-│   ├── day29-30/          # 模拟赛题1
-│   ├── day31-32/          # 模拟赛题2
-│   ├── day33-34/          # 模拟赛题3
-│   └── day35-review/
-│
-├── week6-final-sprint/    # 第6周: 最后冲刺
-│   ├── day36-37/          # 知识复盘
-│   ├── day38-39/          # 国赛策略
-│   ├── day40-41/          # 模板整理
-│   └── day42-review/      # 考前准备
-│
-├── references/            # 参考资料
-│   ├── gurobi_study_plan_detailed.md  # 完整28天计划
-│   ├── math-to-code-translation.md    # 公式→代码对照
-│   └── (额外Gurobi官方示例)
-│
-├── github-repos/          # GitHub 下载的仓库
-│   └── README.md          # 各仓库说明+链接
-│
-└── my-practice/           # 你自己的练习代码
+├── my-practice/        ← 你自己的练习
+├── references/         ← 资料索引
+└── github-repos/       ← 推荐的外部项目
 ```
 
-## 📅 42天学习冲刺计划
+## 🔧 怎么用
+
+| 阶段 | 做什么 |
+|------|--------|
+| **赛前** | 各人 clone 仓库，跟着 week1→6 自学 Gurobi |
+| **赛中** | 在 `competition/` 下建文件夹，各写各的，`git push` 同步 |
+| **赛后** | 优秀解法整理进 `references/`，下次复用 |
+
+## 🖥 运行环境
+
+- Gurobi 13.0.0（License 2841306，有效期至 2027-07）
+- Python：`D:/Anaconda3/python.exe`
+- 编辑器：Spyder（推荐 `#%%` 分块跑）
+- 论文：Overleaf（实时协作，不放在 GitHub 里）
+
+---
+
+## 📅 42 天学习路线
 
 ### 第 1 周：Gurobi 基础 (7/24 - 7/30)
 **每天 1 小时，在 Spyder 里跑通官方示例**
@@ -159,79 +139,6 @@ gurobi-study/
 | `day25-project/project_design.py` | ⭐⭐ | ✅ 已生成 | 综合项目模板 |
 
 ---
-
-## 📦 GitHub 仓库索引
-
-这些是原计划提到的仓库，网络允许时克隆到 `github-repos/`：
-
-```bash
-# ⭐ 最关键 (W2用): KKT/强对偶
-git clone --depth 1 https://github.com/simstevens/ddro-via-bilevel.git
-
-# 官方示例 (W1参考)
-git clone --depth 1 https://github.com/lx249/gurobi-modeling-examples.git
-
-# 中文注释版 (选)
-git clone --depth 1 https://github.com/zhuqiu8/Guroi_modeling-examples.git
-
-# AUGMECON (W3用): ε-约束法
-git clone --depth 1 https://github.com/wouterbles/pyaugmecon.git
-
-# 多目标Gurobi (W3参考)
-git clone --depth 1 https://github.com/Dr-BAli/Multi-Objective-Optimization-Using-Gurobi.git
-
-# 双层基准测试 (W4参考)
-git clone --depth 1 https://github.com/benchopt/benchmark_bilevel.git
-```
-
-各仓库用途：
-| 仓库 | 周次 | 主要价值 |
-|------|------|---------|
-| `ddro-via-bilevel` | W2-W3 | KKT/强对偶转化代码 ⭐ |
-| `gurobi-modeling-examples` | W1 | Optimization 101 多目标 |
-| `pyaugmecon` | W3 | 增强ε-约束法实现 |
-| `Multi-Objective-Optimization-Using-Gurobi` | W3 | 权重法+帕累托 |
-| `benchmark_bilevel` | W4 | 算法选型参考 |
-
----
-
-## 💡 每日学习流程
-
-```
-1. 打开 Spyder
-2. cd D:/Python_Projects/gurobi-study
-3. 找到今天的 day 文件夹
-4. 打开 .py 文件 → #%% 分块跑
-5. 改 ==TODO== 或 ★ 标记的参数
-6. 观察输出是否与预期一致
-7. 不一致 → 看文件里的注释提示
-8. ✅ 验证条件通过 → 明天继续
-```
-
-## 🔧 快速命令
-
-```bash
-# 运行任何练习文件
-D:/Anaconda3/python.exe day10-kkt-bigm/kkt_bilevel_complete.py
-
-# 写 LP 文件检查
-# 在代码末尾加:  m.write("check.lp")
-# 然后用记事本打开
-
-# Spyder 打开方式
-# start "" "D:\Anaconda3\Scripts\spyder.exe"
-```
-
----
-
-## 📐 学习原则
-
-1. **先跑通，再理解** — 不要试图一次性看懂全部代码
-2. **每次只改 1 个参数** — 观察变化，理解因果关系
-3. **#%% 分块跑** — Spyder 的 Cell 模式，一段段验证
-4. **纸上公式→代码** — 先写数学形式再翻译成 Gurobi
-5. **每周必须复习** — 复习日的 3-4 个挑战必须自己手写
-6. **跑不通就问** — 把错误信息和代码发给我
 
 ---
 
