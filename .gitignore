@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.vscode/
+.idea/
+
+# Gurobi output
+*.lp
+*.mps
+*.sol
+*.bas
+*.json
+
+# Images (generated from code)
+*.png
+*.svg
+*.jpg
+
+# ZIP / temp
+*.zip
+*.tar.gz
+*.7z
+
+# OS
+.DS_Store
+Thumbs.db
