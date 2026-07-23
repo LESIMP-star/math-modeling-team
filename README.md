@@ -50,6 +50,19 @@ cd 仓库名
 
 ---
 
+## 📚 数学建模学习（给队友）
+
+这个仓库同时记录数模学习过程。你们可以：
+
+- 跟着 `week1→6` 自学 Gurobi
+- 每周跑通一个示例，在 **微信群** 打卡
+- 有好的资料直接往 `references/` 里加
+- 国赛时在 `competition/` 下协作
+
+> 不会 Git 操作没关系，直接往文件夹里放文件也行，我统一提交。
+
+---
+
 ## 📅 42 天学习路线
 
 ### 第 1 周：Gurobi 基础 (7/24 - 7/30)
@@ -142,21 +155,19 @@ cd 仓库名
 
 ---
 
-## 📎 推荐 GitHub 项目
+## 📎 推荐资源
 
-| 项目 | 说明 | 适用 |
-|------|------|------|
-| [ddro-via-bilevel](https://github.com/simstevens/ddro-via-bilevel) | ⭐ KKT/强对偶单层转化，含最短路径/背包/投资组合案例 | W2 核心参考 |
-| [gurobi-modeling-examples](https://github.com/lx249/gurobi-modeling-examples) | Gurobi 官方建模示例合辑（Notebook） | W1 入门参考 |
-| [gurobi-modeling-examples (中文)](https://github.com/zhuqiu8/Guroi_modeling-examples) | 同上，带中文注释 | W1 中文友好 |
-| [pyaugmecon](https://github.com/wouterbles/pyaugmecon) | 增强 ε-约束法，Python + Gurobi，自动帕累托前沿 | W3 ε-约束法 |
-| [Multi-Objective-Optimization-Using-Gurobi](https://github.com/Dr-BAli/Multi-Objective-Optimization-Using-Gurobi) | 权重法 + 帕累托前沿 + Gurobi `setObjectiveN` | W3 多目标参考 |
-| [Bilevel-Optimization-Emissions](https://github.com/ainiusheng/Bilevel-Optimization-Emissions) | 双层 + 多目标（利润/排放/成本），电力定价场景 | W2-W3 双层+多目标 |
-| [benchmark_bilevel](https://github.com/benchopt/benchmark_bilevel) | 双层优化基准测试框架，多求解器对比 | W4 算法选型 |
-| [DeepRL-BiobjectiveKP](https://github.com/Multi-Objective-Optimization-Laboratory/DeepRL-BiobjectiveKP) | AUGMECON + Gurobi，双目标背包问题 | W3 ε-约束法 |
-| [TETREES](https://github.com/SoftwareImpacts/SIMPAC-2025-349) | 精确 ε-约束法，Python + Gurobi，服务-资源分配 | W3 ε-约束法 |
-| [Solver-for-MIQP-QP-Bilevel-Problems](https://github.com/AndreasHorlaender/Solver-for-MIQP-QP-Bilevel-Problems) | 高松弛（HPR）vs KKT，变量松弛+切割平面 | W4 加速技巧 |
-| [VF-iDCA](https://github.com/SUSTech-Optimization) | iDCA 迭代分解（超参数选择），SUSTech 系列 | 进阶参考（iP-DCA） |
+| 资源 | 说明 |
+|------|------|
+| [最优化课程 - 彭振华](https://zhenhuapeng.github.io/coursematerials/) | 导师的最优化课程，和 Gurobi 学习同步进行 |
+| [ddro-via-bilevel](https://github.com/simstevens/ddro-via-bilevel) | ⭐ KKT/强对偶单层转化—最短路径/背包/投资组合案例 |
+| [gurobi-modeling-examples](https://github.com/lx249/gurobi-modeling-examples) | Gurobi 官方建模示例合辑（Notebook） |
+| [gurobi-modeling-examples (中文)](https://github.com/zhuqiu8/Guroi_modeling-examples) | 同上，带中文注释 |
+| [pyaugmecon](https://github.com/wouterbles/pyaugmecon) | 增强 ε-约束法，Python + Gurobi，自动帕累托前沿 |
+| [Multi-Objective-Optimization-Using-Gurobi](https://github.com/Dr-BAli/Multi-Objective-Optimization-Using-Gurobi) | 权重法 + 帕累托前沿 + Gurobi `setObjectiveN` |
+| [benchmark_bilevel](https://github.com/benchopt/benchmark_bilevel) | 双层优化基准测试框架 |
+| [Solver-for-MIQP-QP-Bilevel-Problems](https://github.com/AndreasHorlaender/Solver-for-MIQP-QP-Bilevel-Problems) | 高松弛（HPR）vs KKT，切割平面 |
+| [VF-iDCA](https://github.com/SUSTech-Optimization) | iDCA 迭代分解（超参数选择）|
 
 ---
 
