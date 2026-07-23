@@ -1,0 +1,189 @@
+% ============================================
+% 全国大学生数学建模竞赛论文模板
+% CUMCM Paper Template
+% ============================================
+\input{preamble}
+
+\begin{document}
+
+% === 标题页 ===
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\LARGE\bfseries 全国大学生数学建模竞赛论文\par}
+  \vspace{1.5cm}
+  {\Large\bfseries 论文题目：\underline{\hspace{8cm}}\par}
+  \vspace{2cm}
+
+  % --- 摘要 ---
+  \begin{cnabstract}
+    % 在此填写摘要内容
+    % 摘要应包含：问题概述、方法、主要结果
+    TODO: 摘要内容
+  \end{cnabstract}
+
+  \cnkeywords{关键词1；关键词2；关键词3；关键词4}
+
+  \vfill
+\end{titlepage}
+
+% === 目录 ===
+\tableofcontents
+\newpage
+
+% ========================================
+% 一、问题重述与问题分析
+% ========================================
+\section{问题重述与问题分析}
+
+\subsection{问题重述}
+% 用自己的语言重述题目要求，不要照抄原题
+% 包含：背景信息、需要解决的具体问题
+
+\subsection{问题分析}
+% 对问题进行整体分析
+% 包含：问题的数学本质、可能的建模方向、各子问题之间的关系
+
+% ========================================
+% 二、模型假设与符号说明
+% ========================================
+\section{模型假设与符号说明}
+
+\subsection{模型假设}
+% 列出建模过程中的合理假设
+% 每条假设应有简要说明其合理性
+\begin{enumerate}[label=\arabic*.]
+  \item 假设1：说明
+  \item 假设2：说明
+  \item 假设3：说明
+\end{enumerate}
+
+\subsection{符号说明}
+% 用表格列出主要符号及其含义
+\begin{table}[H]
+  \centering
+  \caption{符号说明}
+  \begin{tabular}{cll}
+    \toprule
+    符号 & 含义 & 单位 \\
+    \midrule
+    $x$ & 变量说明 & 单位 \\
+    $y$ & 变量说明 & 单位 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ========================================
+% 三、模型建立与公式推导
+% ========================================
+\section{模型建立与公式推导}
+
+\subsection{模型一：XXX模型}
+% 详细描述模型的建立过程
+% 包含：数学推导、公式推导、模型的物理/数学意义
+
+% 示例公式
+\begin{equation}
+  \min_{x} \quad f(x) = \sum_{i=1}^{n} a_i x_i
+  \label{eq:model1}
+\end{equation}
+
+\subsection{模型二：XXX模型}
+% 第二个模型的建立
+
+% ========================================
+% 四、模型求解
+% ========================================
+\section{模型求解}
+
+\subsection{求解算法}
+% 描述求解算法的步骤
+% 可以用算法环境
+\begin{algorithm}[H]
+  \caption{算法名称}
+  \KwIn{输入参数}
+  \KwOut{输出结果}
+  初始化\;
+  \While{未收敛}{
+    步骤1\;
+    步骤2\;
+  }
+  \Return 结果\;
+\end{algorithm}
+
+\subsection{求解结果}
+% 展示计算结果
+% 可以用表格或公式
+
+% ========================================
+% 五、结果分析与灵敏度分析
+% ========================================
+\section{结果分析与灵敏度分析}
+
+\subsection{结果分析}
+% 对求解结果进行分析和解释
+
+\subsection{灵敏度分析}
+% 分析模型参数变化对结果的影响
+% 展示灵敏度分析图表
+
+% ========================================
+% 六、专业图表展示与分析
+% ========================================
+\section{专业图表展示与分析}
+
+% 图表示例
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.8\textwidth]{figures/xxx.png}
+  \caption{图表标题}
+  \label{fig:example}
+\end{figure}
+
+% ========================================
+% 七、模型优点、不足与未来应用推广
+% ========================================
+\section{模型优点、不足与未来应用推广}
+
+\subsection{模型优点}
+\begin{enumerate}[label=\arabic*.]
+  \item 优点1
+  \item 优点2
+\end{enumerate}
+
+\subsection{模型不足}
+\begin{enumerate}[label=\arabic*.]
+  \item 不足1
+  \item 不足2
+\end{enumerate}
+
+\subsection{未来应用推广}
+% 模型的推广方向和应用前景
+
+% ========================================
+% 参考文献
+% ========================================
+\newpage
+\begin{thebibliography}{99}
+  \bibitem{ref1} 作者. 题目[J]. 期刊, 年份, 卷(期): 页码.
+  \bibitem{ref2} 作者. 书名[M]. 出版地: 出版社, 年份.
+\end{thebibliography}
+
+% ========================================
+% 附录
+% ========================================
+\newpage
+\appendix
+\section{附录：代码}
+
+\begin{lstlisting}[language=Python, caption={主要代码}]
+# 在此粘贴核心 Python 代码
+import numpy as np
+import pandas as pd
+
+# 数据处理
+# 模型求解
+# 结果输出
+\end{lstlisting}
+
+\end{document}

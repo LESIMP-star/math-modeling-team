@@ -1,0 +1,80 @@
+% ============================================
+% 国赛 LaTeX 导言区
+% 全国大学生数学建模竞赛 (CUMCM)
+% ============================================
+
+% === 文档类与中文支持 ===
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}           % 中文支持
+\usepackage{fontspec}              % 字体设置
+
+% === 页面布局 ===
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.8cm,right=2.8cm]{geometry}
+\usepackage{fancyhdr}              % 页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small 全国大学生数学建模竞赛论文}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% === 数学宏包 ===
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{bm}                    % 粗体数学符号
+\usepackage{nicefrac}              % 斜分数
+
+% === 图表 ===
+\usepackage{graphicx}              % 插图
+\usepackage{float}                 % 浮动体控制
+\usepackage{booktabs}              % 三线表
+\usepackage{multirow}              % 合并行
+\usepackage{longtable}             % 长表格
+\usepackage{subcaption}            % 子图
+
+% === 算法 ===
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+% === 列表 ===
+\usepackage{enumitem}
+
+% === 颜色与超链接 ===
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=blue,urlcolor=blue]{hyperref}
+
+% === 参考文献（国标格式）===
+\usepackage{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+
+% === 代码高亮 ===
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  breaklines=true,
+  captionpos=b,
+  tabsize=4
+}
+
+% === 自定义命令 ===
+\newcommand{\vect}[1]{\bm{#1}}           % 向量
+\newcommand{\mat}[1]{\mathbf{#1}}        % 矩阵
+\newcommand{\diff}{\mathrm{d}}           % 微分d
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}  % 偏导数
+\newcommand{\dd}[2]{\frac{\diff #1}{\diff #2}}        % 导数
+
+% === 摘要环境 ===
+\newenvironment{cnabstract}{
+  \begin{center}
+    {\large\bfseries 摘\quad 要}
+  \end{center}
+  \vspace{0.5em}
+}{\par\vspace{1em}}
+
+% === 关键词 ===
+\newcommand{\cnkeywords}[1]{
+  \noindent\textbf{关键词：}#1
+}

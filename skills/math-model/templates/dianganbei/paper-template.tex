@@ -1,0 +1,194 @@
+% ============================================
+% 电工杯论文模板
+% "中国电机工程学会杯"全国大学生电工数学建模竞赛
+% ============================================
+\input{preamble}
+
+\begin{document}
+
+% ========================================
+% 第一页：封面页（不编页码）
+% ========================================
+\coverpage
+\begin{center}
+  \vspace*{3cm}
+  {\LARGE\bfseries "中国电机工程学会杯"\\全国大学生电工数学建模竞赛论文\par}
+  \vspace{3cm}
+  {\Large\bfseries 参赛编号：\underline{\hspace{6cm}}\par}
+  \vspace{2cm}
+  {\Large\bfseries 论文题目：A/B题~\underline{\hspace{7cm}}\par}
+  \vfill
+\end{center}
+\newpage
+
+% ========================================
+% 第二页：摘要（从本页开始编页码，页码从1开始）
+% ========================================
+\setcounter{page}{1}
+
+\begin{center}
+  {\Large\bfseries 论文题目：A/B题~XXXXXXXXXX\par}
+\end{center}
+\vspace{1em}
+
+\begin{cnabstract}
+  % 在此填写摘要内容
+  % 摘要应简明扼要，篇幅不超过一页
+  % 包含：问题概述、方法、主要结果
+  TODO: 摘要内容
+\end{cnabstract}
+
+\cnkeywords{关键词1；关键词2；关键词3；关键词4}
+
+\newpage
+
+% ========================================
+% 正文部分（从第三页开始，控制在25页以内）
+% 不要目录
+% ========================================
+
+% ========================================
+% 一、问题分析
+% ========================================
+\section{问题分析}
+
+\subsection{问题背景}
+% 用自己的语言概述题目背景
+
+\subsection{问题重述}
+% 重述需要解决的具体问题
+
+\subsection{问题分析}
+% 对问题进行整体分析
+% 包含：问题的数学本质、可能的建模方向、各子问题之间的关系
+
+% ========================================
+% 二、模型假设与符号说明
+% ========================================
+\section{模型假设与符号说明}
+
+\subsection{模型假设}
+% 列出建模过程中的合理假设
+% 每条假设应有简要说明其合理性
+\begin{enumerate}[label=\arabic*.]
+  \item 假设1：说明
+  \item 假设2：说明
+  \item 假设3：说明
+\end{enumerate}
+
+\subsection{符号说明}
+% 用表格列出主要符号及其含义
+\begin{table}[H]
+  \centering
+  \caption{符号说明}
+  \begin{tabular}{cll}
+    \toprule
+    符号 & 含义 & 单位 \\
+    \midrule
+    $x$ & 变量说明 & 单位 \\
+    $y$ & 变量说明 & 单位 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ========================================
+% 三、问题一：模型建立与求解
+% ========================================
+\section{问题一：模型建立与求解}
+
+\subsection{模型建立}
+% 详细描述模型的建立过程
+% 包含：数学推导、公式推导、模型的物理/数学意义
+
+% 示例公式
+\begin{equation}
+  \min_{x} \quad f(x) = \sum_{i=1}^{n} a_i x_i
+  \label{eq:model1}
+\end{equation}
+
+\subsection{求解算法}
+% 描述求解算法的步骤
+\begin{algorithm}[H]
+  \caption{算法名称}
+  \KwIn{输入参数}
+  \KwOut{输出结果}
+  初始化\;
+  \While{未收敛}{
+    步骤1\;
+    步骤2\;
+  }
+  \Return 结果\;
+\end{algorithm}
+
+\subsection{求解结果}
+% 展示计算结果
+
+\subsection{结果分析}
+% 对求解结果进行分析和解释
+
+% ========================================
+% 四、问题二：模型建立与求解（如有多问）
+% ========================================
+\section{问题二：模型建立与求解}
+
+\subsection{模型建立}
+
+\subsection{求解结果}
+
+\subsection{结果分析}
+
+% ========================================
+% 五、灵敏度分析
+% ========================================
+\section{灵敏度分析}
+% 分析模型参数变化对结果的影响
+% 展示灵敏度分析图表
+
+% ========================================
+% 六、模型优缺点与推广
+% ========================================
+\section{模型优缺点与推广}
+
+\subsection{模型优点}
+\begin{enumerate}[label=\arabic*.]
+  \item 优点1
+  \item 优点2
+\end{enumerate}
+
+\subsection{模型不足}
+\begin{enumerate}[label=\arabic*.]
+  \item 不足1
+  \item 不足2
+\end{enumerate}
+
+\subsection{未来应用推广}
+% 模型的推广方向和应用前景
+
+% ========================================
+% 参考文献
+% ========================================
+\newpage
+\begin{thebibliography}{99}
+  \bibitem{ref1} 作者. 书名[M]. 出版地: 出版社, 出版年, 页码.
+  \bibitem{ref2} 作者. 论文名[J]. 杂志名, 卷期号: 起止页码, 出版年.
+  \bibitem{ref3} 作者. 资源标题[EB/OL]. 网址, 访问时间.
+\end{thebibliography}
+
+% ========================================
+% 附录（页数不限）
+% ========================================
+\newpage
+\appendix
+\section{附录：代码}
+
+\begin{lstlisting}[language=Python, caption={主要代码}]
+# 在此粘贴核心 Python 代码
+import numpy as np
+import pandas as pd
+
+# 数据处理
+# 模型求解
+# 结果输出
+\end{lstlisting}
+
+\end{document}
