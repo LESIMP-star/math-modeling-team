@@ -28,8 +28,17 @@ cd 仓库名
 │   ├── data/           ← 赛题数据
 │   └── figs/           ← 结果图
 │
-├── my-practice/        ← 你自己的练习
+├── skills/             ← 数模全流程工作流（选题→建模→写论文）
+│   └── math-model/     ← 含 agent 定义、算法库、论文模板
+│
+├── courses/            ← 课程资料（最优化、运筹学等）
+│   └── 最优化课程/      ← 彭老师课件
+│
 ├── references/         ← 资料索引
+│   ├── latex/          ← LaTeX教程PDF
+│   └── official_examples_index.md
+│
+├── my-practice/        ← 你自己的练习
 └── github-repos/       ← 推荐的外部项目
 ```
 
